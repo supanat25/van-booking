@@ -10,8 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFaceFrown } from "@fortawesome/free-solid-svg-icons";
 import MarkMap from "./MarkMap";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
-import Waiting from "./Waiting";
-import { responsiveFontSizes } from "@mui/material";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Author from "./Author";

@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 import MarkMap from "./MarkMap";
 import Modal from "react-bootstrap/Modal";
 import Map from "./Map";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 import Waiting from "./Waiting";
 import Author from "./Author";
 
@@ -41,14 +40,7 @@ function MyAccount() {
     return () => clearTimeout(timer);
   }, []);
 
-  // useEffect(() => {
-  //   if (accountData && accountData.length > 0) {
-  //     // console.log(accountData[0].lat_user);
-  //     // console.log(accountData[0].id_user);
-  //     localStorage.setItem("lat_user", accountData[0].lat_user);
-  //     localStorage.setItem("lng_user", accountData[0].lng_user);
-  //   }
-  // }, [accountData]);
+
 
   const createMyMarkMap = () => {
     console.log("OK");
