@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import { Button, Form, Offcanvas } from "react-bootstrap";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Modal } from "react-bootstrap";
 import Nav from "./Nav";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../css/scheduleUser.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFaceFrown } from "@fortawesome/free-solid-svg-icons";
 import MarkMap from "./MarkMap";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
@@ -27,8 +26,8 @@ export default function ScheduleUser() {
   const [scheduleList, setScheduleList] = useState([]);
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const [selectedItem, setSelectedItem] = useState(1);
-  const [appointment, setAppointment] = useState("");
-  const [numberOfPeople, setNumberOfPeople] = useState(1);
+  // const [appointment, setAppointment] = useState("");
+  // const [numberOfPeople, setNumberOfPeople] = useState(1);
   const [selectedScheduleData, setSelectedScheduleData] = useState("");
   const [showMap, setShowMap] = useState(false);
   const [booking, setBooking] = useState([]);

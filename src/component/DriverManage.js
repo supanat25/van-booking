@@ -20,7 +20,7 @@ function DriverManage() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [carNumber, setcarNumber] = useState("");
   const [identificationNumber, setidentificationNumber] = useState("");
-  const [role, setRole] = useState();
+  // const [role, setRole] = useState();
   const [selectedDriver, setSelectedDriver] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [usernameList , setUsernameList] = useState([]);

@@ -16,8 +16,8 @@ function ScheduleDriver() {
   const [checkDriverStatus, setCheckDriverStatus] = useState(0);
   const [show, setShow] = useState(false);
   const [checkRegis , setCheckRegis] = useState ([]);
-  const [checkKps , setCheckKps] = useState ([]);
-  const [checkKu , setCheckKu] = useState ();
+  // const [checkKps , setCheckKps] = useState ([]);
+  // const [checkKu , setCheckKu] = useState ();
   const [checkDriver, setCheckDriver] = useState(0); 
   const id_driver = localStorage.getItem("id_driver");
 

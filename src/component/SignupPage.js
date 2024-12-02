@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import  Axios  from "axios";
 import "../css/signup.css";
-import { Link, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import infoPic from "../img/cover02.png";
 
 const SignupPage = () => {

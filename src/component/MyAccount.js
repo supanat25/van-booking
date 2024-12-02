@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 import MarkMap from "./MarkMap";
 import Modal from "react-bootstrap/Modal";
 import Map from "./Map";
-import Waiting from "./Waiting";
 import Author from "./Author";
 
 function MyAccount() {
@@ -19,10 +18,7 @@ function MyAccount() {
   const id_user = localStorage.getItem("id_user");
   const id_driver = localStorage.getItem("id_driver");
   const checkMapShow = localStorage.getItem("lat_user")
-  // localStorage.setItem("lat", localStorage.getItem("lat_user"));
-  // localStorage.setItem("lng", localStorage.getItem("lng_user"));
-  // const latitudeLongitude = localStorage.getItem("lastClickedLocation");
-  // const mapData = JSON.parse(latitudeLongitude);
+
   const navigate = useNavigate();
 
   useEffect(() => {

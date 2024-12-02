@@ -14,8 +14,7 @@ function BookingDetail() {
   const [bookingDetail, setBookingDetail] = useState([]);
   const [showModal, setShowModal] = useState(false); // เพิ่ม state สำหรับการแสดง modal
   const [idToDelete, setIdToDelete] = useState(null); // เพิ่ม state เพื่อเก็บ ID ที่จะลบ
-  const [id_scheduleDetailToUpdate, setId_scheduleDetailToUpdate] =
-    useState(null); // เพิ่ม state เพื่อเก็บ ID ที่จะลบ
+  const [id_scheduleDetailToUpdate, setId_scheduleDetailToUpdate] =useState(null); // เพิ่ม state เพื่อเก็บ ID ที่จะลบ
   const [number_of_seatToDelete, setNumber_of_seatToDelete] = useState(null); // เพิ่ม state เพื่อเก็บ ID ที่จะลบ
   const [currentTime, setCurrentTime] = useState(""); //เก็บเวลาปัจจุบัน
   const id_user = localStorage.getItem("id_user");

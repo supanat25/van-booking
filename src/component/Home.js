@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Nav from "./Nav";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import img from "../img/kps.jpg";
 import img2 from "../img/kubkk.png";
 import Author from "./Author";
 import "../css/home.css";
-import Footer from "./Footer";
 
 function Home() {
   const navigate = useNavigate();
