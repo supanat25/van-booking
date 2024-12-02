@@ -156,7 +156,7 @@ function RoundManagement() {
     <><Author/>
       {" "}
       <Nav />
-      <div className="main-container">
+      <div className="page-container">
         {/* <div>RoundManagement</div> */}
 
         <div className="head-manage">

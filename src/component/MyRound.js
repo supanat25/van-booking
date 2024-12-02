@@ -201,7 +201,7 @@ function MyRound() {
     <div>
       <Author/>
       <Nav />
-      <div className="main-container">
+      <div className="page-container">
         
         <Tabs
           defaultActiveKey="kps"

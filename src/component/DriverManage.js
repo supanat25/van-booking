@@ -132,7 +132,7 @@ function DriverManage() {
     <>
     <Author/>
     <Nav />
-    <div className="main-container">
+    <div className="page-container">
       
       {/* <div>DriverMage</div> */}
       <div className="head-manage">

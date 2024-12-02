@@ -167,7 +167,7 @@ function ScheduleDriver() {
     <>
     <Author/>
     <Nav />
-    <div className="main-container">
+    <div className="page-container">
       
      
 

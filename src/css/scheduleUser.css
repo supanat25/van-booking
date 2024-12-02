@@ -79,7 +79,7 @@
 .button-group {
   display: flex;
   grid-template-columns: 1fr 1fr;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 2%
 }
 
@@ -180,14 +180,14 @@
   .card-body-3 button {
     display: flex;
     align-items: center;
-    justify-self: end; 
+    justify-self: flex-end; 
     font-size: 3vw;
   }
 
   .card-body-3 h4 {
     display: flex;
     align-items: center;
-    justify-self: start;
+    justify-self: flex-start;
   }
 
 

@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
-import Nav from "./Nav";
-import "../css/bookingDetail.css";
+
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
+
 import "../css/main.css";
 import "../css/animation.css";
+import "../css/bookingDetail.css";
 import Map from "./Map";
 import Author from "./Author";
+import Nav from "./Nav";
 
 function BookingDetail() {
   const [bookingDetail, setBookingDetail] = useState([]);
@@ -110,7 +111,7 @@ function BookingDetail() {
     <>
     <Author/>
     <Nav />
-    <div className="main-container">
+    <div className="page-container">
     <div className="schedule-user-filter">
         <h5 style={{margin:"0"}}>การจองของฉัน</h5>
       </div>

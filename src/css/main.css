@@ -1,4 +1,4 @@
-.allContainer {
+.page-container {
   display: flex;
   width: 80%;
   max-width: 80%;
@@ -19,7 +19,7 @@
 
 .body-sub-infomation {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 2%;
 }
 
@@ -74,7 +74,7 @@
 .card-body-booking-1 h8 {
   display: flex;
   position: sticky;
-  justify-content: end;
+  justify-content: flex-end;
   /* top: 16%; */
   /* right: 3.5%; */
   font-weight: 300;
@@ -263,7 +263,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .main-container {
+  .page-container {
     display: flex;
     width: 80%;
     max-width: 80%;
