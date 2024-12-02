@@ -10,11 +10,6 @@ function TimeOptions() {
     getRoundTime();
   }, []);
 
-  // useEffect(() => {
-  //   console.log(time[0]);
-
-  // }, [time]);
-
   const getRoundTime = () => {
     const a = 1;
     Axios.get(`https://back-van-booking.onrender.com/checkRoundTime/${a}`).then((response) => {
