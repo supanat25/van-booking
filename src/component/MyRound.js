@@ -74,7 +74,7 @@ function MyRound() {
   const handleTravel = (schedule) => {
     getCurrentTime();
     console.log("1Time "+currentTime)
-    Axios.put("http://localhost:3333/updateTravel", {
+    Axios.put("https://back-van-booking.onrender.com/updateTravel", {
       id_driver: idDriver,
       id_scheduleDetail: schedule.id_scheduleDetail,
       status_user: 3,
@@ -96,7 +96,7 @@ function MyRound() {
   };
 
   const deleteBooking = (id_scheduleDetail) => {
-    Axios.delete(`http://localhost:3333/deleteBooking/${id_scheduleDetail}`)
+    Axios.delete(`https://back-van-booking.onrender.com/deleteBooking/${id_scheduleDetail}`)
       .then((response) => {
         console.log("Delete success");
       })
@@ -106,14 +106,14 @@ function MyRound() {
   };
 
   // const createRecord = (schedule) => {
-  //   Axios.post("http://localhost:3333/addRecord", {
+  //   Axios.post("https://back-van-booking.onrender.com/addRecord", {
   //     id_driver: idDriver,
   //     id_scheduleDetail: schedule.id_scheduleDetail,
   //   });
   // };
 
   const handleTripSaccess = (schedule) => {
-    Axios.put("http://localhost:3333/updateTripSuccess", {
+    Axios.put("https://back-van-booking.onrender.com/updateTripSuccess", {
       id_driver: idDriver,
       id_scheduleDetail: schedule.id_scheduleDetail,
       status_user: 2,
@@ -143,7 +143,7 @@ function MyRound() {
       newNumberOfPeople <= 14 &&
       newNumberOfPeople >= selectedSchedule.current_seat
     ) {
-      Axios.put("http://localhost:3333/updateAllSeat", {
+      Axios.put("https://back-van-booking.onrender.com/updateAllSeat", {
         id_scheduleDetail: selectedSchedule.id_scheduleDetail,
         all_seat: newNumberOfPeople,
       })
@@ -161,7 +161,7 @@ function MyRound() {
   };
 
   const handleCancelRound = () => {
-    Axios.put("http://localhost:3333/updateCancelRound", {
+    Axios.put("https://back-van-booking.onrender.com/updateCancelRound", {
       status: "1",
       id_driver: idDriver,
       id_scheduleDetail: selectedSchedule.id_scheduleDetail,
@@ -178,7 +178,7 @@ function MyRound() {
   };
 
   const getMyRound = () => {
-    Axios.get(`http://localhost:3333/MyRound/${idDriver}`, {})
+    Axios.get(`https://back-van-booking.onrender.com/MyRound/${idDriver}`, {})
       .then((response) => {
         setMyRoundList(response.data);
       })
@@ -188,7 +188,7 @@ function MyRound() {
   };
 
   const getCustomer = () => {
-    Axios.get(`http://localhost:3333/customer/${idDriver}`, {})
+    Axios.get(`https://back-van-booking.onrender.com/customer/${idDriver}`, {})
       .then((response) => {
         setCustomerList(response.data);
       })

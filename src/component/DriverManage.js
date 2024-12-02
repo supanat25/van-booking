@@ -32,7 +32,7 @@ function DriverManage() {
   const handleShow = () => setShow(true);
 
   const getUser = () => {
-    Axios.get("http://localhost:3333/user").then((response) => {
+    Axios.get("https://back-van-booking.onrender.com/user").then((response) => {
       setShowuser(response.data);
     });
   };
@@ -43,7 +43,7 @@ function DriverManage() {
   };
 
   const checkDuplicate  = ()=>{
-    Axios.get(`http://localhost:3333/checkDuplicate/`)
+    Axios.get(`https://back-van-booking.onrender.com/checkDuplicate/`)
     .then((response) => {
       setUsernameList(response.data);
     })
@@ -53,7 +53,7 @@ function DriverManage() {
   }
 
   const addDriver = () => {
-    Axios.post("http://localhost:3333/addDriver", {
+    Axios.post("https://back-van-booking.onrender.com/addDriver", {
       fname: name,
       username: username,
       password: 123,

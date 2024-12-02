@@ -57,7 +57,7 @@ function MyAccount() {
   };
 
   const getUserData = () => {
-    Axios.get(`http://localhost:3333/userData/${id_user}`).then((response) => {
+    Axios.get(`https://back-van-booking.onrender.com/userData/${id_user}`).then((response) => {
       setAccountData(response.data);
 
       // localStorage.setItem("lat", localStorage.getItem("lat_user"));
@@ -66,7 +66,7 @@ function MyAccount() {
   };
 
   const getDriverData = () => {
-    Axios.get(`http://localhost:3333/driverData/${id_driver}`).then(
+    Axios.get(`https://back-van-booking.onrender.com/driverData/${id_driver}`).then(
       (response) => {
         setAccountDataDriver(response.data);
       }
@@ -77,7 +77,7 @@ function MyAccount() {
     setShowMapPage(!showMapPage);
     const latitudeLongitude = localStorage.getItem("lastClickedLocation");
     const mapData = JSON.parse(latitudeLongitude);
-    Axios.put("http://localhost:3333/setDefaultMarker", {
+    Axios.put("https://back-van-booking.onrender.com/setDefaultMarker", {
       id_user: id_user,
       lat_user: mapData.latitude,
       lng_user: mapData.longitude,

@@ -29,7 +29,7 @@ function Setting() {
   }, []);
 
   const getDriverData = () => {
-    Axios.get(`http://localhost:3333/driverData/${id_driver}`).then(
+    Axios.get(`https://back-van-booking.onrender.com/driverData/${id_driver}`).then(
       (response) => {
         const driverData = response.data[0];
         setAccountDataDriver(driverData);
@@ -40,7 +40,7 @@ function Setting() {
   };
 
   const getUserData = () => {
-    Axios.get(`http://localhost:3333/userData/${id_user}`).then((response) => {
+    Axios.get(`https://back-van-booking.onrender.com/userData/${id_user}`).then((response) => {
       const userData = response.data[0];
       setAccountData(userData);
       setName(userData.fname);
@@ -69,7 +69,7 @@ function Setting() {
   };
 
   const updateUser = () => {
-    Axios.put("http://localhost:3333/updateUser", {
+    Axios.put("https://back-van-booking.onrender.com/updateUser", {
       password: password,
       id_user: id_user,
       fname: name,

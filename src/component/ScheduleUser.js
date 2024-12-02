@@ -91,7 +91,7 @@ export default function ScheduleUser() {
 
   const getMyBooking = () => {
 
-    Axios.get(`http://localhost:3333/myBooking/${id_user}`)
+    Axios.get(`https://back-van-booking.onrender.com/myBooking/${id_user}`)
       .then((response) => {
         setMyBooking(response.data);
         console.log(myBooking)
@@ -106,7 +106,7 @@ export default function ScheduleUser() {
     setSelectedItem(destination);
     // const destinationValue = destination === "บางเขน" ? 2 : 1;
 
-    Axios.get(`http://localhost:3333/scheduleUser/${destination}`)
+    Axios.get(`https://back-van-booking.onrender.com/scheduleUser/${destination}`)
       .then((response) => {
         setScheduleList(response.data);
       
@@ -134,7 +134,7 @@ export default function ScheduleUser() {
       console.log("2" + meetingPoint);
     }
 
-    Axios.post("http://localhost:3333/booking", {
+    Axios.post("https://back-van-booking.onrender.com/booking", {
       number_of_seat: number_of_seat,
       meeting_point: meetingPoint,
       id_user_b: id_user,

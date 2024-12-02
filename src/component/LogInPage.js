@@ -32,7 +32,7 @@ const LogInPage = () => {
     }, 3000);
     // กำหนดเวลาในการโหลด 1.5 วินาที
     setTimeout(() => {
-      fetch("http://localhost:3333/login", {
+      fetch("https://back-van-booking.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

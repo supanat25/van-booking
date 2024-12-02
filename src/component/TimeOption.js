@@ -17,7 +17,7 @@ function TimeOptions() {
 
   const getRoundTime = () => {
     const a = 1;
-    Axios.get(`http://localhost:3333/checkRoundTime/${a}`).then((response) => {
+    Axios.get(`https://back-van-booking.onrender.com/checkRoundTime/${a}`).then((response) => {
       setTime(response.data);
       
     });

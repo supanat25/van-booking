@@ -52,7 +52,7 @@ function RoundManagement() {
   }, []);
 
   const handleCancelDriverRound = (data) => {
-    Axios.put("http://localhost:3333/updateCancelRound", {
+    Axios.put("https://back-van-booking.onrender.com/updateCancelRound", {
       status: "1",
       id_driver: data.id_driver,
       id_scheduleDetail: data.id_scheduleDetail,
@@ -76,7 +76,7 @@ function RoundManagement() {
     event.preventDefault();
     // ส่งข้อมูลการแก้ไขรอบรถไปยังเซิร์ฟเวอร์ และทำการอัปเดตรายการรอบรถใน state
     Axios.put(
-      `http://localhost:3333/updateRound/${editRound.id_scheduleDetail}`,
+      `https://back-van-booking.onrender.com/updateRound/${editRound.id_scheduleDetail}`,
       {
         time: editRound.time,
         // id_schedule: editRound.id_schedule,
@@ -105,7 +105,7 @@ function RoundManagement() {
     console.log(destinationValue);
     setSelectedItem(destinationValue);
 
-    Axios.get(`http://localhost:3333/schedule/${destination}`)
+    Axios.get(`https://back-van-booking.onrender.com/schedule/${destination}`)
       .then((response) => {
         setRoundList(response.data);
       })
@@ -115,7 +115,7 @@ function RoundManagement() {
   };
 
   const addRound = () => {
-    Axios.post("http://localhost:3333/addRound", {
+    Axios.post("https://back-van-booking.onrender.com/addRound", {
       time: time,
       id_schedule: id_schedule,
     }).then(() => [
@@ -133,7 +133,7 @@ function RoundManagement() {
   };
 
   const deleteRound = (id_scheduleDetail) => {
-    Axios.delete(`http://localhost:3333/delete/${id_scheduleDetail}`).then(
+    Axios.delete(`https://back-van-booking.onrender.com/delete/${id_scheduleDetail}`).then(
       () => {
         setRoundList(
           roundList.filter((val) => {

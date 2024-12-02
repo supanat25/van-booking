@@ -96,14 +96,14 @@ function ScheduleDriver() {
 
 
   const handdleCheck = () => {
-    Axios.get(`http://localhost:3333/check/${id_driver}`).then((response) => {
+    Axios.get(`https://back-van-booking.onrender.com/check/${id_driver}`).then((response) => {
       setCheck(response.data);
 
       // เมื่อมีการตรวจสอบ check_driver สำเร็จ ให้ตรวจสอบค่าเพื่อกำหนดค่า disableButton
       // setDisableButton(response.data.check_driver !== 1);
     });
 
-    Axios.get(`http://localhost:3333/checkRegisterRound/${id_driver}`).then((response) => {
+    Axios.get(`https://back-van-booking.onrender.com/checkRegisterRound/${id_driver}`).then((response) => {
       setCheckRegis(response.data);
       console.log("6666")
      
@@ -111,7 +111,7 @@ function ScheduleDriver() {
   };
 
   const handleConfirm = (selectedSchedule) => {
-    Axios.put("http://localhost:3333/updateRegisConfirm", {
+    Axios.put("https://back-van-booking.onrender.com/updateRegisConfirm", {
       status: "2", // กำหนดค่า status ที่ต้องการอัปเดต
       id_driver: id_driver, // กำหนดค่า id_driver ที่ต้องการอัปเดต
       id_scheduleDetail: selectedSchedule.id_scheduleDetail, // ใช้ค่า id_scheduleDetail ของ selectedSchedule
@@ -132,7 +132,7 @@ function ScheduleDriver() {
     setSelectedItem(destination);
     const destinationValue = destination === "บางเขน" ? 2 : 1;
 
-    Axios.get(`http://localhost:3333/schedule/${destinationValue}`)
+    Axios.get(`https://back-van-booking.onrender.com/schedule/${destinationValue}`)
       .then((response) => {
         setScheduleList(response.data);
       })

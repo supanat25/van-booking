@@ -19,7 +19,7 @@ const SignupPage = () => {
   }, []);
 
   const checkDuplicate  = ()=>{
-    Axios.get(`http://localhost:3333/checkDuplicate/`)
+    Axios.get(`https://back-van-booking.onrender.com/checkDuplicate/`)
     .then((response) => {
       setUsernameList(response.data);
     })
@@ -56,7 +56,7 @@ const SignupPage = () => {
       return;
     }
 
-    fetch("http://localhost:3333/register", {
+    fetch("https://back-van-booking.onrender.com/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

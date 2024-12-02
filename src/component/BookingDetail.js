@@ -60,7 +60,7 @@ function BookingDetail() {
   };
 
   const getBookingDetail = (currentDate) => {
-    Axios.get(`http://localhost:3333/bookingDetail/${id_user}`)
+    Axios.get(`https://back-van-booking.onrender.com/bookingDetail/${id_user}`)
       .then((response) => {
         setBookingDetail(response.data);
       })
@@ -70,7 +70,7 @@ function BookingDetail() {
   };
 
   const updateSchedule = (id_scheduleDetail, number_of_seat) => {
-    Axios.put("http://localhost:3333/updateAfterCancel", {
+    Axios.put("https://back-van-booking.onrender.com/updateAfterCancel", {
       id_scheduleDetail: id_scheduleDetail,
       number_of_seat: number_of_seat,
     })
@@ -83,7 +83,7 @@ function BookingDetail() {
   };
 
   const cancelBooking = () => {
-    Axios.delete(`http://localhost:3333/cancelBooking/${idToDelete}`)
+    Axios.delete(`https://back-van-booking.onrender.com/cancelBooking/${idToDelete}`)
       .then((response) => {
         updateSchedule(id_scheduleDetailToUpdate, number_of_seatToDelete); // ส่ง id_scheduleDetail และ number_of_seat
         setShowModal(false);
