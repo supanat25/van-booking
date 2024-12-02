@@ -111,7 +111,7 @@ function BookingDetail() {
     <>
     <Author/>
     <Nav />
-    <div className="main-container-1">
+    <div className="main-container">
     <div className="schedule-user-filter">
         <h5 style={{margin:"0"}}>การจองของฉัน</h5>
       </div>

@@ -101,7 +101,7 @@ function MyAccount() {
     <div>
       <Author/>
       <Nav />
-      <div className="main-container">
+      <div className="allContainer">
         <div className="schedule-user-filter">
           <h5 style={{ margin: "0" }}>ข้อมูลบัญชีของฉัน</h5>
         </div>

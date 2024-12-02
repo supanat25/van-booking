@@ -37,7 +37,7 @@ function Home() {
   // });
 
   return (
-    <div className="main-container">
+    <div className="allContainer">
       <Nav />
 
       <Author />

@@ -88,7 +88,7 @@ function Setting() {
     <>
     <Author/>
     <Nav />
-    <div className="main-container-1">
+    <div className="main-container">
     <div className="schedule-user-filter">
         <h5 style={{margin:"0"}}>แก้ไขข้อมูลบัญชี</h5>
       </div>
