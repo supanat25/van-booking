@@ -15,6 +15,7 @@ import MarkMap from "./MarkMap";
 import Author from "./Author";
 import Nav from "./Nav";
 import "../css/scheduleUser.css";
+import "../css/global.css";
 
 const icon = <FontAwesomeIcon icon={faArrowRightLong} />;
 

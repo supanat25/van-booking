@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "../css/main.css";
 import Axios from "axios";
 import Dropdown from "react-bootstrap/Dropdown";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+
 import Nav from "./Nav";
 import Author from "./Author";
+import "../css/global.css";
 
 function ScheduleDriver() {
   const [currentTime, setCurrentTime] = useState(""); //เก็บเวลาปัจจุบัน

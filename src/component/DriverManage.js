@@ -6,11 +6,13 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
-import "../css/main.css";
+
+import { FaMagnifyingGlass } from "react-icons/fa6";
+
+import Author from "./Author";
+import "../css/global.css";
 import "../css/manage.css";
 import Nav from "./Nav";
-import { FaMagnifyingGlass } from "react-icons/fa6";
-import Author from "./Author";
 
 
 function DriverManage() {

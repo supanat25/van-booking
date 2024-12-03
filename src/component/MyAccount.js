@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Card, Button } from "react-bootstrap";
 import Axios from "axios";
-import "../css/setting.css";
-import "../css/main.css";
-import Nav from "./Nav";
 import { useNavigate } from "react-router-dom";
-import MarkMap from "./MarkMap";
 import Modal from "react-bootstrap/Modal";
+
+import Nav from "./Nav";
+import MarkMap from "./MarkMap";
 import Map from "./Map";
-import Author from "./Author";
+import Author from "./Author"
+;import "../css/setting.css";
+import "../css/global.css";
+
 
 function MyAccount() {
   const [showMapPage, setShowMapPage] = useState(false);

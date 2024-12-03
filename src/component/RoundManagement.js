@@ -9,7 +9,8 @@ import TimeOptions from "./TimeOption";
 import { BsPencilSquare, BsTrash } from "react-icons/bs";
 import { AiOutlineClear } from "react-icons/ai";
 import Modal from "react-bootstrap/Modal";
-import "../css/main.css";
+
+import "../css/global.css";
 import Nav from "./Nav";
 import Author from "./Author";
 

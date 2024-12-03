@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import "../css/main.css";
-import Nav from "./Nav";
+
 import { Button, Modal, Form } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+
 import Map from "./Map";
+import "../css/global.css";
+import Nav from "./Nav";
 import Author from "./Author";
 
 

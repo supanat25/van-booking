@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Axios from "axios";
 import "../css/setting.css";
-import "../css/main.css";
+import "../css/global.css";
 import Nav from "./Nav";
 import Author from "./Author";
 

@@ -4,7 +4,7 @@ import Axios from "axios";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-import "../css/main.css";
+import "../css/global.css";
 import "../css/animation.css";
 import "../css/bookingDetail.css";
 import Map from "./Map";
