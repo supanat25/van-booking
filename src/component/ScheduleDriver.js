@@ -165,7 +165,7 @@ function ScheduleDriver() {
   
 
   return (
-    <>
+    <div>
     <Author/>
     <Nav />
     <div className="page-container">
@@ -284,7 +284,7 @@ function ScheduleDriver() {
           );
         })}
     </div>
-    </>
+    </div>
   );
 }
 
