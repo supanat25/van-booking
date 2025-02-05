@@ -46,7 +46,7 @@ function Nav() {
               style={{ width: "11%", height: "auto",  }}
             />
 
-            <h5 className="nav-top-text">ระบบจองรถตู้วินกำแพงแสน - บางเขน </h5>
+            <h5 className="nav-top-text">EasyGo ระบบจองรถตู้วินกำแพงแสน - บางเขน </h5>
 
             <NavLink
               to="/"

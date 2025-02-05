@@ -97,7 +97,7 @@ const LogInPage = () => {
               fontWeight: "bold",
             }}
           >
-            เข้าสู่ระบบ
+            EasyGO
           </h3>
           <form onSubmit={handleLogin}>
             <div className="form-group">
